@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宠物之家 Pet Haven</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f2f7f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    .card {
+      width: 380px;
+      background: #fff;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(46, 125, 80, 0.12);
+    }
+    .card-cover {
+      height: 220px;
+      background: linear-gradient(135deg, #a8e6cf, #7ecba1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 96px;
+    }
+    .card-body {
+      padding: 20px 22px 24px;
+    }
+    .card-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      background: linear-gradient(135deg, #2e7d5a, #1b5e3b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .card-subtitle {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-desc {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 18px;
+    }
+    .tag {
+      display: inline-block;
+      background: #e8f5ee;
+      color: #2e7d5a;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .btn {
+      flex: 1;
+      padding: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary {
+      background: #2e7d5a;
+      color: #fff;
+    }
+    .btn-secondary {
+      background: #ff6b6b;
+      color: #fff;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .btn-primary:hover {
+      background: #1b5e3b;
+    }
+    .btn-secondary:hover {
+      background: #e55454;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-cover">🐶</div>
+    <div class="card-body">
+      <div class="card-title">小柴 · 豆豆</div>
+      <div class="card-subtitle">柴犬 · 2 岁 · 已疫苗</div>
+      <div class="card-desc">
+        活泼亲人，喜欢户外奔跑和接飞盘。已学会坐下、握手、趴下等指令，
+        适合有养宠经验或愿意学习的家庭领养。
+      </div>
+      <div>
+        <span class="tag">性格温顺</span>
+        <span class="tag">已驱虫</span>
+        <span class="tag">健康认证</span>
+        <span class="tag">亲人互动</span>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" id="adoptBtn">💚 领养我</button>
+        <button class="btn btn-secondary" id="moreBtn">了解更多 →</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
